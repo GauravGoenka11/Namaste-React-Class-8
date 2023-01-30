@@ -1,0 +1,55 @@
+Chapter 02 - Assignment - Igniting our App
+
+Please Note: Write the answers and code on your own while finishing your assignments. Try to
+put down your thoughts into words by yourself in your own words. (This will help you develop
+muscle memory and you will remember all the concepts properly) ✌
+
+Theory Assignment:
+● - What is `NPM`?
+		NPM has no official name. It helps to install packages in app.
+		
+● - What is `Parcel/Webpack`? Why do we need it?
+		Parcel is package of javascript files.It is heart of react app it does many things for React like HMR,file watching, caching,bundling,minification,etc
+
+● - What is `.parcel-cache`
+		Parcel-cache is helps in caching.It does a lot of work for us like HMR,File Cahching,etc
+
+● - What is `npx` ?
+		npx is used to execute the package.
+		
+● - What is difference between `dependencies` vs `devDependencies`
+			dependencies vs devDependencies is that dependencies installed in Production and devDependencies is used for developement purpose.
+			
+● - What is Tree Shaking?
+		
+● - What is Hot Module Replacement?
+		When we save any file in our project automatically changes are reflected in the browser so it is called as Hot Module Replacement.
+		
+● - List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words.
+	HMR,File Watcher, Create Server, Minification, Image Optimization
+	HMR-Hot Module Replacement keeps track of our file and updates automically the changes in our browser.
+	File Watcher--This is the algorithm that is used by HMR for keeping track of the files.It is written in C++.
+
+● - What is `.gitignore`? What should we add and not add into it?
+		.gitignore is file where we put the files/folder name that we should not be pushed to github. The files that are automatically generated that we should put in gitignore.
+		Example:-node_modules,parcel_cache
+		
+● - What is the difference between `package.json` and `package-lock.json`
+			In package.json we can see the version number. But package-lock.json keeps the track of version number.(We can see the excat verison number in package-lock.json)
+			
+● - Why should I not modify `package-lock.json`?
+		We should not modify because it keeps the track of excat version number if we will change then it will break the synchronization between package.json and package-lock.json
+
+● - What is `node_modules` ? Is it a good idea to push that on git?
+			Node_module is the folder where all the packages will be there which is required for react-app to run.No we should not push node_modules to github as we can regenerate it.
+			
+● - What is the `dist` folder?
+		dist folder is development build create faster developement version of our project.
+
+● - What is `browserlists`
+		Browerlist is the dependency in node_module provided by pracel.By using browerlist we can run our app in old browers also.We have to write browerlist in package.json
+			
+Read about dif bundlers: vite, webpack, parcel
+● Read about: ^ - caret and ~ - tilda
+● Read about Script types in html (MDN Docs)
