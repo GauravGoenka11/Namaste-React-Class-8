@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Logo from "../assests/img/foodvilla.png"
+import {Link} from "react-router-dom";
 
 const loggedInUser=()=>{
   return false;
@@ -9,22 +11,24 @@ const Title=()=>(
     <img
     className="logo"
     alt="logo"
-     src="https://yt3.googleusercontent.com/ytc/AL5GRJXudT76175T4x4n7eslWM1YkgNLHDSSqfXGoadl=s900-c-k-c0x00ffffff-no-rj"/>
+     src={Logo}/>
      </a>
   )
   
   const Header=()=>{
 
     const [isLoggedIn,setIsLoggedIn]=useState("false");
+    
+  
 
     return(
       <div className="header">
         <Title/>
         <div className="nav-item">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/about"><li>About</li></Link>
+            <Link to="/contact"><li>Contact</li></Link>
             <li>Cart</li>
           </ul>
         </div>
